@@ -1,2 +1,2 @@
 # Video-uploading-platform
-Created with CodeSandbox
+Created with firebase

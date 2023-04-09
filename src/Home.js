@@ -33,22 +33,6 @@ const Home = ({ setProgress }) => {
                 </Video>
               );
             })}
-            {Object.keys(data).map((item, i) => {
-              return (
-                <Video key={item}>
-                  <img src={data[item].thumbURL} alt={data[item].title} />
-                  <h1>{data[item].title}</h1>
-                </Video>
-              );
-            })}
-            {Object.keys(data).map((item, i) => {
-              return (
-                <Video key={item}>
-                  <img src={data[item].thumbURL} alt={data[item].title} />
-                  <h1>{data[item].title}</h1>
-                </Video>
-              );
-            })}
           </VideoWrapper>
         </div>
       </div>

@@ -110,6 +110,7 @@ const Upload = ({ setProgress }) => {
                             }
                           );
                           let ApiRes = await ApiReq.json();
+                          toast.success("uploaded...");
                           console.log(ApiRes);
                           setTimeout(() => {
                             navgate("/");

@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Styled from "styled-components";
+import { toast } from 'react-toastify';
+
+
 const Home = ({ setProgress }) => {
   const [data, setData] = useState({});
   const getData = async () => {

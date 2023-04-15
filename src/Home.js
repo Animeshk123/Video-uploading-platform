@@ -21,8 +21,7 @@ const Home = ({ setProgress }) => {
     setProgress(20);
     getData();
     toast.promise(getData, {
-              pending: "Loading Videos...",
-              success: "",
+              pending: "Loading...",
               error: "Something West Wrong!!!"
             });
     setProgress(100);

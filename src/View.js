@@ -43,6 +43,7 @@ const Views = ({ setProgress }) => {
               <Video controls src={video.videoURL}></Video>
               <p>{video.title}</p>
             </div>
+            <div>
             {data.map((item, index) => {
               return (
                 <VideoCard key={index}>
@@ -53,6 +54,7 @@ const Views = ({ setProgress }) => {
                 </VideoCard>
               );
             })}
+            </div>
           </VideoWrapper>
         </div>
       </div>

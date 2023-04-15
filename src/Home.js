@@ -14,17 +14,17 @@ const Home = ({ setProgress }) => {
         method: "GET"
       }
     );
-    toast.promise(ApiReq, {
-              pending: "Loading Videos...",
-              success: "",
-              error: "Something West Wrong!!!"
-            });
     let ApiRes = await ApiReq.json();
     setData(ApiRes);
   };
   useEffect(() => {
     setProgress(20);
     getData();
+    toast.promise(getData, {
+              pending: "Loading Videos...",
+              success: "",
+              error: "Something West Wrong!!!"
+            });
     setProgress(100);
   }, []);
   return (

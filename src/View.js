@@ -40,7 +40,7 @@ const Views = ({ setProgress }) => {
         <div className="container">
           <VideoWrapper>
             <div className="videoW">
-              <Video controls src={video.videoURL} autoPlay={true} muted={true}></Video>
+              <Video controls src={video.videoURL} autoPlay={true}></Video>
               <p>{video.title}</p>
             </div>
             <div>

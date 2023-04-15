@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import Styled from "styled-components";
+
 import { NavLink } from "react-router-dom";
 const Views = ({ setProgress }) => {
   const [video, setVideo] = useState({});
   const [data, setData] = useState([]);
-  const { id } = useParams();
+  const [searchParams] = useSearchParams();
+  const id = searchParams.get('v');
   const getData = async () => {
     let ApiReq = await fetch(
       "https://clone-1211-default-rtdb.firebaseio.com/videosData.json",
@@ -47,7 +49,7 @@ const Views = ({ setProgress }) => {
             {data.map((item, index) => {
               return (
                 <VideoCard key={index}>
-                  <NavLink to={`/view/${item.id}`}>
+                  <NavLink to={`/watch?v={item.id}`}>
                     <img src={item.data.thumbURL} alt={item.data.title} />
                     <p>{item.data.title}</p>
                   </NavLink>

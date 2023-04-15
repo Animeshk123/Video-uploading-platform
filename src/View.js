@@ -84,7 +84,7 @@ const VideoWrapper = Styled.div`
 `;
 
 const VideoCard = Styled.div`
-  width:40%;
+  width:100%;
   height:100px;
   padding:0.4rem 0.5rem;
   border-radius:8px;

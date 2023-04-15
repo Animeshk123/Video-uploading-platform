@@ -43,7 +43,7 @@ const App = () => {
         />
         <Route
           exact
-          path="/view/:id"
+          path="/watch"
           element={<View setProgress={setProgress} />}
         />
       </Routes>

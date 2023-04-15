@@ -110,7 +110,7 @@ const VideoCard = Styled.div`
     background:rgba(0,0,0,0.2);
   }
   img{
-    width:200px;
+    width:160px;
     height:100%;
     background:gray;
     border-radius:5px;

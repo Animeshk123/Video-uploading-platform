@@ -49,7 +49,7 @@ const Views = ({ setProgress }) => {
             {data.map((item, index) => {
               return (
                 <VideoCard key={index}>
-                  <NavLink to={`/watch?v={item.id}`}>
+                  <NavLink to={`/watch?v=${item.id}`}>
                     <img src={item.data.thumbURL} alt={item.data.title} />
                     <p>{item.data.title}</p>
                   </NavLink>

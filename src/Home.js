@@ -4,12 +4,18 @@ import Styled from "styled-components";
 const Home = ({ setProgress }) => {
   const [data, setData] = useState({});
   const getData = async () => {
+    
     let ApiReq = await fetch(
       "https://clone-1211-default-rtdb.firebaseio.com/videosData.json",
       {
         method: "GET"
       }
     );
+    toast.promise(ApiReq, {
+              pending: "Loading Videos...",
+              success: "",
+              error: "Something West Wrong!!!"
+            });
     let ApiRes = await ApiReq.json();
     setData(ApiRes);
   };

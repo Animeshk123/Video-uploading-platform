@@ -34,7 +34,7 @@ const Home = ({ setProgress }) => {
             {Object.keys(data).map((item, i) => {
               return (
                 <Video key={item}>
-                  <NavLink to={`/view/${item}`}>
+                  <NavLink to={`/watch?v=${item}`}>
                     <img src={data[item].thumbURL} alt={data[item].title} />
                     <h1>{data[item].title}</h1>
                   </NavLink>

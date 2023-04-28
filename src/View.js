@@ -35,6 +35,7 @@ const Views = ({ setProgress }) => {
     setProgress(0);
     getData();
     setProgress(100);
+    document.title = video.title;
   }, [id]);
   return (
     <>

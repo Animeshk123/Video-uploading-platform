@@ -20,7 +20,6 @@ const Views = ({ setProgress }) => {
     for (let i in ApiRes) {
       if (i == id) {
         setVideo(ApiRes[i]);
-        document.title = ApiRes[i].title;
       } else {
         let pushData = {
           data: ApiRes[i],
